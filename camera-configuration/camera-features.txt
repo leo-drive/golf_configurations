@@ -19,7 +19,7 @@ AcquisitionMode	Continuous
 AcquisitionStartMode	Normal
 AcquisitionFrameCount	1
 AcquisitionBurstFrameCount	1
-AcquisitionFrameRate	17.9
+AcquisitionFrameRate	20
 AcquisitionFrameRateEnable	1
 TriggerSelector	FrameStart
 TriggerSelector	AcquisitionStart
