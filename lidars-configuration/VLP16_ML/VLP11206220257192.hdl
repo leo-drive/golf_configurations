@@ -30,18 +30,18 @@
             "bot":"hotfix/3.0.41.1#1",
             "top":"hotfix/3.0.41.1#1"
         },
-        "rt":"9414"
+        "rt":"77104"
     },
     "status":{
         "gps":{
             "pps_state":"Locked",
-            "position":""
+            "position":"41 01.28464857N 028 53.20956733"
         },
         "motor":{
             "state":"On",
             "rpm":599,
             "lock":"On",
-            "phase":8931
+            "phase":8974
         },
         "laser":{
             "state":"On"
@@ -50,34 +50,34 @@
     "diag":{
         "volt_temp":{
             "bot":{
-                "i_out":2083,
-                "pwr_1_2v":988,
-                "lm20_temp":1283,
+                "i_out":2088,
+                "pwr_1_2v":982,
+                "lm20_temp":1117,
                 "pwr_5v":2056,
                 "pwr_2_5v":2048,
-                "pwr_3_3v":2688,
-                "pwr_v_in":933,
+                "pwr_3_3v":2697,
+                "pwr_v_in":928,
                 "pwr_1_25v":1
             },
             "top":{
-                "hv":2991,
-                "ad_temp":635,
-                "lm20_temp":1270,
-                "pwr_5v":2099,
-                "pwr_2_5v":2047,
-                "pwr_3_3v":2684,
-                "pwr_5v_raw":2236,
-                "pwr_vccint":980
+                "hv":2773,
+                "ad_temp":615,
+                "lm20_temp":1096,
+                "pwr_5v":2092,
+                "pwr_2_5v":2046,
+                "pwr_3_3v":2688,
+                "pwr_5v_raw":2186,
+                "pwr_vccint":981
             }
         },
-        "vhv":228,
+        "vhv":355,
         "adc_nf":[15],
-        "adc_stats":[{"mean":15.4,"stddev":0.5}],
+        "adc_stats":[{"mean":15.5,"stddev":0.859}],
         "ixe":1
     },
     "config":{
         "laser":"On",
-        "returns":"Strongest",
+        "returns":"Last",
         "rpm":600,
         "fov":{
             "start":0,
@@ -1063,23 +1063,23 @@
     "pkterr":0,
     "gps":    {
         "nmea":{
-            "data":"",
-            "age":"500170"
+            "data":"$GPRMC,120105.00,A,4101.28464857,N,02853.20956733,E,0.173,134.886,101024,6.151,E,D,S*49",
+            "age":"2574"
         },
         "stats":{
             "pps":{
-                "accepted":"487",
+                "accepted":"2437",
                 "ignored":"0"
             },
             "toh":{
-                "rollover":"0",
+                "rollover":"1",
                 "invalid":"0",
-                "skip":"478",
+                "skip":"2212",
                 "back":"0"
             }
         }
     },
     "short_dist":{
-        "enable":"Off"
+        "enable":"On"
     }
 }

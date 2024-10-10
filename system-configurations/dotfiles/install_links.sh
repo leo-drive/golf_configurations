@@ -16,7 +16,7 @@ create_symlink_if_not_exists() {
     echo ""
 }
 
-USER_NAME="leodrive"
+USER_NAME="golf"
 
 create_symlink_if_not_exists "$SCRIPT_DIR/.bash_aliases" "/home/$USER_NAME/.bash_aliases"
 

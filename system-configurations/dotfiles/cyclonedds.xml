@@ -15,7 +15,7 @@
         </Internal>
         <Tracing>
             <Verbosity>config</Verbosity>
-            <OutputFile>/home/leodrive/dds_logs/cdds.log.${CYCLONEDDS_PID}</OutputFile>
+            <OutputFile>/home/golf/dds_logs/cdds.log.${CYCLONEDDS_PID}</OutputFile>
         </Tracing>
     </Domain>
 </CycloneDDS>

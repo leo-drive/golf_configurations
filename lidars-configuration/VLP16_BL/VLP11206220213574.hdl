@@ -30,18 +30,18 @@
             "bot":"hotfix/3.0.41.1#1",
             "top":"hotfix/3.0.41.1#1"
         },
-        "rt":"7994"
+        "rt":"75687"
     },
     "status":{
         "gps":{
             "pps_state":"Locked",
-            "position":""
+            "position":"41 01.28652208N 028 53.21026432"
         },
         "motor":{
             "state":"On",
-            "rpm":600,
+            "rpm":601,
             "lock":"On",
-            "phase":22544
+            "phase":22525
         },
         "laser":{
             "state":"On"
@@ -50,29 +50,29 @@
     "diag":{
         "volt_temp":{
             "bot":{
-                "i_out":2106,
-                "pwr_1_2v":988,
-                "lm20_temp":1295,
-                "pwr_5v":2056,
-                "pwr_2_5v":2051,
+                "i_out":2101,
+                "pwr_1_2v":989,
+                "lm20_temp":1135,
+                "pwr_5v":2058,
+                "pwr_2_5v":2045,
                 "pwr_3_3v":2705,
-                "pwr_v_in":935,
+                "pwr_v_in":920,
                 "pwr_1_25v":0
             },
             "top":{
-                "hv":2935,
-                "ad_temp":633,
-                "lm20_temp":1271,
-                "pwr_5v":2087,
-                "pwr_2_5v":2047,
-                "pwr_3_3v":2690,
-                "pwr_5v_raw":2238,
+                "hv":2733,
+                "ad_temp":614,
+                "lm20_temp":1108,
+                "pwr_5v":2084,
+                "pwr_2_5v":2049,
+                "pwr_3_3v":2691,
+                "pwr_5v_raw":2222,
                 "pwr_vccint":978
             }
         },
-        "vhv":226,
+        "vhv":346,
         "adc_nf":[15],
-        "adc_stats":[{"mean":15,"stddev":0.234}],
+        "adc_stats":[{"mean":15.7,"stddev":0.5}],
         "ixe":1
     },
     "config":{
@@ -1063,23 +1063,23 @@
     "pkterr":0,
     "gps":    {
         "nmea":{
-            "data":"",
-            "age":"542500"
+            "data":"$GPRMC,120339.00,A,4101.28652208,N,02853.21026432,E,0.109,133.473,101024,6.151,E,D,S*42",
+            "age":"2276"
         },
         "stats":{
             "pps":{
-                "accepted":"529",
+                "accepted":"2591",
                 "ignored":"0"
             },
             "toh":{
                 "rollover":"0",
                 "invalid":"0",
-                "skip":"470",
-                "back":"0"
+                "skip":"1844",
+                "back":"1"
             }
         }
     },
     "short_dist":{
-        "enable":"Off"
+        "enable":"On"
     }
 }

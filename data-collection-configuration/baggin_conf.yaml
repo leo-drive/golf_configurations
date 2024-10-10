@@ -1,0 +1,59 @@
+/**: # This Config File For Bag Recording Tool: https://github.com/leo-drive/leodrive_baggin.git
+  ros__parameters:
+    control_mode: manual # manual or engage
+    output_dir: /media/golf/DATA/TEMP/bags/ # output directory
+    min_disk_space: 1000000000 # in bytes (10^9 = 1GB)
+    storage: mcap # sqlite3 or mcap
+    max_bag_duration: 60 # in seconds
+    max_cache_size: 104857600 # in bytes (104857600 bytes = 100MiB)
+
+    fully_qualified_topics:
+      - /localization/kinematic_state
+      - /localization/pose_estimator/exe_time_ms
+      - /localization/pose_estimator/initial_pose_with_covariance
+      - /localization/pose_estimator/iteration_num
+      - /localization/pose_estimator/nearest_voxel_transformation_likelihood
+      - /localization/pose_estimator/pose
+      - /localization/pose_estimator/pose_with_covariance
+      - /localization/pose_estimator/transform_probability
+      - /localization/pose_twist_fusion_filter/estimated_yaw_bias
+      - /localization/pose_twist_fusion_filter/kinematic_state
+      - /localization/pose_twist_fusion_filter/pose
+      - /localization/pose_twist_fusion_filter/pose_with_covariance_without_yawbias
+      - /localization/pose_twist_fusion_filter/pose_without_yawbias
+      - /localization/pose_twist_fusion_filter/twist
+      - /localization/pose_twist_fusion_filter/twist_with_covariance
+      - /localization/pose_with_covariance
+      - /localization/twist_estimator/gyro_twist
+      - /localization/twist_estimator/gyro_twist_raw
+      - /localization/twist_estimator/twist_with_covariance
+      - /localization/twist_estimator/twist_with_covariance_raw
+      - /perception/object_recognition/objects
+      - /perception/object_recognition/tracking/objects
+      - /perception/occupancy_grid_map/map
+      - /sensing/camera/camera2/image_raw/compressed # front camera (needs to be anonymized)
+      - /sensing/camera/camera2/camera_info
+      - /sensing/lidar/rear_left/velodyne_packets
+      - /sensing/lidar/rear_right/velodyne_packets
+      - /sensing/lidar/top/velodyne_packets
+      - /sensing/lidar/middle_left/velodyne_packets
+      - /sensing/lidar/middle_right/velodyne_packets
+      - /rosout
+    regex_topics:
+      - ^/api/*
+      - ^/autoware/*
+      - ^/awapi/*
+      - ^/control/*
+      - ^/diagnostics*
+      - ^/external/*
+      - ^/initialpose/*
+      - ^/perception/object_recognition/detection/rois*
+      - ^/planning/*
+      - ^/sensing/gnss/*
+      - ^/sensing/imu/*
+      - ^/sensing/vehicle_velocity_converter/*
+      - ^/system/*
+      - ^/vehicle/*
+      - ^/tf*
+    exclude_topics:
+      - ^/my_awesome_ns/excluded_topic$

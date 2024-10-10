@@ -30,21 +30,21 @@
             "top":"release/5.2.3#4",
             "bot":"release/5.2.3#4"
         },
-        "rt":"18989"
+        "rt":"86920"
     },
     "status":{
         "gps":{
             "pps_state":"Locked",
-            "position":"41 15.14400419N 029 00.85129911"
+            "position":"41 01.28541823N 028 53.20909431"
         },
-        "tod":{"sec":1675382868, "nsec":815161336},
-        "usectoh":468815165,
+        "tod":{"sec":1728562123, "nsec":817936416},
+        "usectoh":523817941,
         "motor":{
             "state":"On",
-            "rpm":598,
+            "rpm":600,
             "lock":"On",
-            "phase":305,
-            "ns_per_rev":100257280
+            "phase":22,
+            "ns_per_rev":100019178
         },
         "laser":{
             "state":"On"
@@ -53,22 +53,22 @@
     "diag":{
         "volt_temp":{
             "bot":{
-                "pwr_1_0v":1646,
-                "pwr_1_1v":1774,
-                "pwr_1_2v":1966,
-                "pwr_2_5v":4078,
-                "lm20_temp":1278,
+                "pwr_1_0v":1647,
+                "pwr_1_1v":1775,
+                "pwr_1_2v":1967,
+                "pwr_2_5v":4081,
+                "lm20_temp":1076,
                 "valid":true
             },
             "top":{
-                "hv":2073,
-                "ad_temp":631,
-                "lm20_temp":1288,
+                "hv":2076,
+                "ad_temp":606,
+                "lm20_temp":1092,
                 "pwr_5v":2051,
-                "pwr_2_5v":2062,
+                "pwr_2_5v":2063,
                 "pwr_3_3v":2737,
                 "pwr_raw":1558,
-                "pwr_vccint":634
+                "pwr_vccint":610
             }
         },
         "ixe":1
@@ -195,18 +195,18 @@
     "pkterr":0,
     "gps":    {
         "nmea":{
-            "data":"$GPRMC,000748.00,V,4115.14400419,N,02900.85129911,E,137.730,,030223,6.013,E,N,V*7E",
-            "age":"734"
+            "data":"$GPRMC,120843.00,A,4101.28541823,N,02853.20909431,E,0.134,137.807,101024,6.151,E,D,S*45",
+            "age":"723"
         },
         "stats":{
             "pps":{
-                "accepted":"30",
+                "accepted":"2893",
                 "ignored":"0"
             },
             "toh":{
                 "rollover":"0",
                 "invalid":"0",
-                "skip":"29",
+                "skip":"1188",
                 "back":"0"
             }
         }

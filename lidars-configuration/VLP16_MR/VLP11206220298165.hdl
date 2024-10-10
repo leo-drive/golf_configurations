@@ -30,18 +30,18 @@
             "bot":"hotfix/3.0.41.1#1",
             "top":"hotfix/3.0.41.1#1"
         },
-        "rt":"9425"
+        "rt":"76961"
     },
     "status":{
         "gps":{
             "pps_state":"Locked",
-            "position":""
+            "position":"41 01.28625795N 028 53.20981149"
         },
         "motor":{
             "state":"On",
-            "rpm":602,
+            "rpm":600,
             "lock":"On",
-            "phase":26957
+            "phase":27004
         },
         "laser":{
             "state":"On"
@@ -50,29 +50,29 @@
     "diag":{
         "volt_temp":{
             "bot":{
-                "i_out":2117,
-                "pwr_1_2v":988,
-                "lm20_temp":1279,
-                "pwr_5v":2064,
-                "pwr_2_5v":2045,
-                "pwr_3_3v":2708,
-                "pwr_v_in":926,
-                "pwr_1_25v":1
+                "i_out":2108,
+                "pwr_1_2v":987,
+                "lm20_temp":1098,
+                "pwr_5v":2055,
+                "pwr_2_5v":2053,
+                "pwr_3_3v":2702,
+                "pwr_v_in":933,
+                "pwr_1_25v":0
             },
             "top":{
-                "hv":2902,
-                "ad_temp":635,
-                "lm20_temp":1272,
-                "pwr_5v":2076,
+                "hv":2669,
+                "ad_temp":612,
+                "lm20_temp":1085,
+                "pwr_5v":2068,
                 "pwr_2_5v":2048,
-                "pwr_3_3v":2684,
-                "pwr_5v_raw":2196,
-                "pwr_vccint":973
+                "pwr_3_3v":2683,
+                "pwr_5v_raw":2176,
+                "pwr_vccint":974
             }
         },
-        "vhv":226,
-        "adc_nf":[14],
-        "adc_stats":[{"mean":14.9,"stddev":0.484}],
+        "vhv":363,
+        "adc_nf":[15],
+        "adc_stats":[{"mean":15.4,"stddev":0.594}],
         "ixe":1
     },
     "config":{
@@ -1063,23 +1063,23 @@
     "pkterr":0,
     "gps":    {
         "nmea":{
-            "data":"",
-            "age":"527478"
+            "data":"$GPRMC,120235.00,A,4101.28625795,N,02853.20981149,E,0.121,130.783,101024,6.151,E,D,S*47",
+            "age":"2393"
         },
         "stats":{
             "pps":{
-                "accepted":"514",
+                "accepted":"2527",
                 "ignored":"0"
             },
             "toh":{
-                "rollover":"0",
+                "rollover":"1",
                 "invalid":"0",
-                "skip":"468",
+                "skip":"1585",
                 "back":"0"
             }
         }
     },
     "short_dist":{
-        "enable":"Off"
+        "enable":"On"
     }
 }
