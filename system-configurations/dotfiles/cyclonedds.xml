@@ -3,12 +3,13 @@
     <Domain Id="any">
         <General>
             <Interfaces>
-                <NetworkInterface autodetermine="true" priority="default" multicast="default" />
+                <NetworkInterface name="enp36s0f0" priority="default" multicast="true" />
             </Interfaces>
-            <AllowMulticast>default</AllowMulticast>
+            <AllowMulticast>true</AllowMulticast>
             <MaxMessageSize>65500B</MaxMessageSize>
         </General>
         <Internal>
+            <SocketReceiveBufferSize min="10MB"/>
             <Watermarks>
                 <WhcHigh>500kB</WhcHigh>
             </Watermarks>

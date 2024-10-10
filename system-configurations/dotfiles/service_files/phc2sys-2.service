@@ -1,0 +1,13 @@
+[Unit]
+Description= PTP Hardware Clock (PHC) service for camera2 (CAM_F)
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/phc2sys -s enp4s0 -w
+ExecStop=/usr/bin/pkill -f phc2sys
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target network-online.target

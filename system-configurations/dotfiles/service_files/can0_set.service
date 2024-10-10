@@ -1,0 +1,10 @@
+[Unit]
+Description=Set CAN0 up
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/bash /root/.scripts/can0_set.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

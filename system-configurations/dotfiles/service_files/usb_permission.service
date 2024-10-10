@@ -1,0 +1,10 @@
+[Unit]
+Description=Change USB permission as 777
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/bash /root/.scripts/usb_permission.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

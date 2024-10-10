@@ -1,0 +1,10 @@
+[Unit]
+Description=Set Multicast on lo
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/bash /root/.scripts/multicast.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

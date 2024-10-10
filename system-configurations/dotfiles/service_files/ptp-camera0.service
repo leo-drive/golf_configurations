@@ -1,0 +1,13 @@
+[Unit]
+Description=Precision Time Protocol (PTP) service for camera0 (CAM_FR)
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/ptp4l -i enp6s0 -m -H -A
+ExecStop=/usr/bin/pkill -f ptp4l
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target network-online.target
